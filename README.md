@@ -13,8 +13,8 @@
 
 ### Get the code
 ``` bash
-git clone https://github.com/chris-cmsoft/mock-me-vuejs.git mockme-vuejs
-cd mockme-vuejs
+git clone https://github.com/chris-cmsoft/mock-me-vuejs.git
+cd mock-me-vuejs
 ```
 
 ### Install Dependencies
