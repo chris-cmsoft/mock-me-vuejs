@@ -1,0 +1,26 @@
+<div id="api-index">
+  <el-row>
+    <el-col :span="8" :offset="8">
+
+      <div v-show="hasManyPages">
+        <p>{{ pageCountText }}</p>
+        <p class="text-right">{{ itemCountText }}</p>
+      </div>
+
+      <ul class="block-list">
+        <li v-if="!loading" class="text-center" v-for="api in apis">
+          {{api.name}}
+        </li>
+        <li v-if="loading">
+          <spinner active="loading" size="xs" theme="light"></spinner>
+        </li>
+      </ul>
+
+      <div v-show="hasManyPages">
+        <el-button @click="previousPage">Previous Page</el-button>
+        <el-button @click="nextPage">Next Page</el-button>
+      </div>
+
+    </el-col>
+  </el-row>
+</div>

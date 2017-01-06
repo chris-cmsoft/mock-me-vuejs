@@ -1,0 +1,11 @@
+<div id="home">
+    <section id="navigation">
+        <el-menu default-active="1" class="el-menu-demo" mode="horizontal" :router="true">
+            <el-menu-item :route="{ name: 'api-index' }" index="1">My api's</el-menu-item>
+        </el-menu>
+    </section>
+    <section id="main">
+        <router-view></router-view>
+    </section>
+
+</div>
